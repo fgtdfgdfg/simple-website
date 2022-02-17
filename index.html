@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Logono site</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.bez.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="jsbat.js"></script>
+    <meta name="description" content="description" />
+    <meta name="keywords" content="key, words" />
+    <meta name="author" content="https://github.com/UnnamedPaster" />
+    <meta property="og:type" content="site" />
+    <meta property="og:title" content="title" />
+    <meta property="og:description" content="description" />
+    <meta property="og:url" content="url" />
+    <meta property="og:image" content="image" />
+    <meta data-react-helmet="true" name="theme-color" content="#000">
+    <meta itemprop="name" content="name" />
+    <meta itemprop="description" content=" " />
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.jpg" />
+    <meta charset="utf-8">
+    <title>JSBat</title>
+</head>
+
+
+
+<body>
+   
+    <audio controls>
+    <source src="lilnasxholiday.mp3" type="audio/mp3">
+    
+            </audio>
+    <h1 class="title"> Logono </h1>
+
+    <div class="main-bar">
+        <h5>[ <a href="page1.html">Noah</a> | <a href="page2.html">Avery</a> | <a href="page3.html">Mason</a> | <a href="page4.html">Cole</a> ]</h5>
+    </div>
+
+    <div class=""></div>
+
+    <div id="preloader">
+        <div class="p"> Preloader Text </div>
+        <h1>JSBat</h1>
+    </div>
+
+    <script>
+
+        paceOptions = {
+            ajax: true,
+            document: true,
+            eventLag: false
+        };
+
+        Pace.on('done', function () {
+            $('.p').delay(500).animate({ top: '30%', opacity: '0' }, 3000, $.bez([0.19, 1, 0.22, 1]));
+
+
+            $('#preloader').delay(1500).animate({ top: '-100%' }, 2000, $.bez([0.19, 1, 0.22, 1]));
+
+            TweenMax.from(".title", 2, {
+                delay: 1.8,
+                y: 10,
+                opacity: 0,
+                ease: Expo.easeInOut
+            })
+
+            TweenMax.from(".main-bar", 2, {
+                delay: 3,
+                y: 10,
+                opacity: 0,
+                ease: Expo.easeInOut
+            })
+
+        });
+
+    </script>
+
+
+</body>
+</html>
